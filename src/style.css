@@ -1,12 +1,8 @@
 body {
   margin: 0;
 }
-
-li,
-ul,
-a {
-  list-style: none;
-  text-decoration: none;
+:root {
+  --color-words: #00acdc;
 }
 
 .header__logo {
@@ -26,6 +22,7 @@ a {
 .nav__item {
   display: flex;
   align-items: center;
+  list-style: none;
 }
 
 .nav__list-link {
@@ -35,10 +32,13 @@ a {
   font-weight: 500;
   margin-right: 20px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
+
+
 .nav__list-link:hover {
-  color: #00acdc;
+  color: var(--color-words);
 }
 
 .is-active {
@@ -53,11 +53,11 @@ a {
   width: 100%;
   bottom: 0;
   height: 3px;
-  background-color: #00acdc;
+  background-color: var(--color-words);
   border-radius: 8px;
 }
 
-@media (max-width: 1024px) {
+@media (width: 1024px) {
   .container {
     width: 1024px;
     margin: 0 auto;
